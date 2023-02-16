@@ -1,0 +1,27 @@
+@ExceptionHandler(value = NoIdFoundException.class)
+	public ResponseEntity<ResponseStructure<String>> noIdFoundExeptionHandler(NoIdFoundException ie){
+		ResponseStructure<String> responseStructure = new ResponseStructure<String>() ;
+		responseStructure.setStatusCode(HttpStatus.NOT_FOUND.value());
+		responseStructure.setMessage("id not found");
+		responseStructure.setData(ie.getMessage());
+		
+		return new ResponseEntity<ResponseStructure<String>>(responseStructure,HttpStatus.NOT_FOUND);
+	}
+
+-------------------------------------------------------------------------------------------
+
+public class NoIdFoundException extends RuntimeException {
+	
+	private String message = "ID Not Found" ;
+	
+	public NoIdFoundException(){}
+	public NoIdFoundException(String message){
+		this.message = message ;
+	}
+	
+	@Override
+	public String getMessage() {
+		return message ;
+	}
+
+}

@@ -1,0 +1,81 @@
+Steps to create maven project
+1.Open Eclipse
+2.click on new project
+3.Search for Maven
+4.Select Maven Project, click on create a simple project click next
+5.Enter group id and artifact id - artifact id will be our project name in eclipse.  
+6.Click on finish.
+
+Steps to install MYSQL
+1.Search MySQL in google.
+2.Click on MySQL i.e., “https://www.mysql.com"
+3.Click on downloads
+4.Click on MySQL community downloads.
+5.Click on MySQL workbench.
+6.Click in go to download page.
+7.Download win, MSI installer (Bigger size one/Offline).
+8.After downloading file click on run.
+9.click all steps for next.
+10.Select Strong password and encryption.
+11.Give username as "root" and password as "root"
+12.Complete the installation by selecting next and install.
+
+Steps to install JDBC
+1.Create a Maven project.
+2.Select pom.xml
+3.Open maven repository by searching for it in google.
+4.Search for MySQL, click on MySQL connector/j select version with most downloads.
+5.Copy dependency and open pom.xml
+6.Create <dependencies>"Paste the dependencies"</dependencies>
+7.Create a package under src/main/java
+8.Create class and start writing programmes.
+
+Steps to install Hibernate
+1.Create a Maven project.
+2.Select pom.xml
+3.Open maven repository
+4.Search for MySQL, click on MySQL connector/j select version with most downloads.
+5.Copy dependency and open pom.xml
+6.Create <dependencies>Paste the dependencies</dependencies>
+7.Search for hibernate core, click on hibernate core relocation select version with most downloads.
+8.Copy dependency and open pom.xml
+9.<dependencies>Paste the dependencies</dependencies>
+10.Under maven project, under src/main/resources, create a "META-INF" folder, search for new file type xml and create a file "persistence.xml" inside the folder.
+11.Copy the persistence code from notepad and paste it under source in persistance.xml file.
+12.Remove Two lines under cache at the beginning.
+13.Save the file.
+14.Create a package under src/main/java.Create class and start writing programmes.
+Steps to add Tomcat Server
+1. Select java EE in perspective.
+2. Select servers in show view
+3. Click on “no servers, click here to add server”
+4. Under apache select tomcat version 9.0
+5. switch from eclipse to chrome and in google type “download apache tomcat 9.0”
+6. Select the first link then click on win64 zip download
+7. After downloading the file extract the file.
+8. Now switch back to eclipse and click on browse folder
+9. Go to the folder where you have extracted the downloaded tomcat zip
+10. Select the folder click on next and finish.
+
+
+Steps to create Servlet Project with hibernate
+1.Create a Maven project and don’t click on create simple project click on next.
+2.In search field search for ‘apache.maven’ select last one or web-app one and click on next.
+3.Enter group id and artifact id, artifact id will be project name and group id is company name.
+4.If src/main is not present right click on project click on build path, configure build path and select all.
+5.Go to maven repository search for java servlet and copy most downloaded dependency.
+6.Paste the dependency in pom.xml
+7.Create html file inside Web-app folder and write html code.
+8.Create a package in src/main/java and create a servlet class.
+9.In web-inf edit web.xml add servlet tag and servlet mapping tag.
+10.Now to create hibernate follow steps to create hibernate i.e., add dependencies.
+11.Inside ‘web-inf’ create a folder ‘classes’ and inside that create ‘META-INF’ folder and inside that create ‘persistence.xml’ file.
+12.Create packages for dto, dao and controller and start writing program. 
+
+Spring Boot Packages
+Mysql
+Spring JPA
+Spring mail
+Web app
+Lombok
+Web dev tools

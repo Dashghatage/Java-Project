@@ -1,0 +1,16 @@
+Basic Git Commands
+---------------------------------------------------------------------------------------
+$ git init -b "branchName" 					           // create a local repository with specific branch
+$ git add "filename / . " 			 			         // add files to staging area ". to add all files"
+$ git rm --cached "filename"                   // Remove file from Staging Area    
+$ git commit -m "First commit" 			           // add files to local repository
+$ git remote add origin "URL of Repository"    // add global repository to git
+$ git remote -v                                // to view global repository
+$ git push origin main                         // to push code from local to global
+$ git checkout saish                           // to propogate between the branches
+$ git remote set-url origin new.git.url/here   // to change git global repository
+$ git pull "link of global repository"         // to copy from global to local
+$ git config --global -l                       // to view username and email linked
+$ git config --global user.email "email"       // to add email to git
+$ git config --global user.name "name"         // to add username to git
+$ git log                                      // to view details of all commits
